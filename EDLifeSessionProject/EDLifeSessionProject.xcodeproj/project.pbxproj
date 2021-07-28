@@ -37,7 +37,6 @@
 		6FF9274926B1E9FF0068D372 /* FeatureBScreenTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272226B1E9FF0068D372 /* FeatureBScreenTags.swift */; };
 		6FF9274A26B1E9FF0068D372 /* FeatureAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272526B1E9FF0068D372 /* FeatureAManager.swift */; };
 		6FF9274B26B1E9FF0068D372 /* FeatureAModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272626B1E9FF0068D372 /* FeatureAModuleFactory.swift */; };
-		6FF9274C26B1E9FF0068D372 /* FeatureProcessingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272726B1E9FF0068D372 /* FeatureProcessingWorker.swift */; };
 		6FF9274D26B1E9FF0068D372 /* FeatureCModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272926B1E9FF0068D372 /* FeatureCModuleFactory.swift */; };
 		6FF9274E26B1E9FF0068D372 /* FeatureCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272A26B1E9FF0068D372 /* FeatureCManager.swift */; };
 		6FF9274F26B1E9FF0068D372 /* FeatureBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9272C26B1E9FF0068D372 /* FeatureBManager.swift */; };
@@ -101,7 +100,6 @@
 		6FF9272226B1E9FF0068D372 /* FeatureBScreenTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureBScreenTags.swift; sourceTree = "<group>"; };
 		6FF9272526B1E9FF0068D372 /* FeatureAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureAManager.swift; sourceTree = "<group>"; };
 		6FF9272626B1E9FF0068D372 /* FeatureAModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureAModuleFactory.swift; sourceTree = "<group>"; };
-		6FF9272726B1E9FF0068D372 /* FeatureProcessingWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureProcessingWorker.swift; sourceTree = "<group>"; };
 		6FF9272926B1E9FF0068D372 /* FeatureCModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCModuleFactory.swift; sourceTree = "<group>"; };
 		6FF9272A26B1E9FF0068D372 /* FeatureCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCManager.swift; sourceTree = "<group>"; };
 		6FF9272C26B1E9FF0068D372 /* FeatureBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureBManager.swift; sourceTree = "<group>"; };
@@ -190,15 +188,15 @@
 		6FF9270426B1E9FF0068D372 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				6FF9270526B1E9FF0068D372 /* FeaturesCoordinator.swift */,
 				6FF9270626B1E9FF0068D372 /* FeatureA */,
+				6FF9271B26B1E9FF0068D372 /* FeatureB */,
+				6FF9271326B1E9FF0068D372 /* FeatureC */,
+				6FF9270526B1E9FF0068D372 /* FeaturesCoordinator.swift */,
 				6FF9270D26B1E9FF0068D372 /* FeatureState.swift */,
-				6FF9270E26B1E9FF0068D372 /* Utilities */,
 				6FF9271026B1E9FF0068D372 /* FeatureManager.swift */,
 				6FF9271126B1E9FF0068D372 /* Worker.swift */,
 				6FF9271226B1E9FF0068D372 /* Store.swift */,
-				6FF9271326B1E9FF0068D372 /* FeatureC */,
-				6FF9271B26B1E9FF0068D372 /* FeatureB */,
+				6FF9270E26B1E9FF0068D372 /* Utilities */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -206,9 +204,9 @@
 		6FF9270626B1E9FF0068D372 /* FeatureA */ = {
 			isa = PBXGroup;
 			children = (
+				6FF9270926B1E9FF0068D372 /* Models */,
 				6FF9270726B1E9FF0068D372 /* FeatureAScreenTags.swift */,
 				6FF9270826B1E9FF0068D372 /* FeatureAState.swift */,
-				6FF9270926B1E9FF0068D372 /* Models */,
 			);
 			path = FeatureA;
 			sourceTree = "<group>";
@@ -234,8 +232,8 @@
 		6FF9271326B1E9FF0068D372 /* FeatureC */ = {
 			isa = PBXGroup;
 			children = (
-				6FF9271426B1E9FF0068D372 /* FeatureCState.swift */,
 				6FF9271526B1E9FF0068D372 /* Models */,
+				6FF9271426B1E9FF0068D372 /* FeatureCState.swift */,
 				6FF9271A26B1E9FF0068D372 /* FeatureCScreenTags.swift */,
 			);
 			path = FeatureC;
@@ -277,9 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				6FF9272426B1E9FF0068D372 /* FeatureA */,
-				6FF9272726B1E9FF0068D372 /* FeatureProcessingWorker.swift */,
-				6FF9272826B1E9FF0068D372 /* FeatureC */,
 				6FF9272B26B1E9FF0068D372 /* FeatureB */,
+				6FF9272826B1E9FF0068D372 /* FeatureC */,
 				6FF9272E26B1E9FF0068D372 /* Modules */,
 			);
 			path = UI;
@@ -483,7 +480,6 @@
 				6FF9274026B1E9FF0068D372 /* AuthorInfoModel.swift in Sources */,
 				6FF9274126B1E9FF0068D372 /* PostDetailModel.swift in Sources */,
 				6FF9273E26B1E9FF0068D372 /* FeatureCState.swift in Sources */,
-				6FF9274C26B1E9FF0068D372 /* FeatureProcessingWorker.swift in Sources */,
 				6FF9274E26B1E9FF0068D372 /* FeatureCManager.swift in Sources */,
 				6FF9274726B1E9FF0068D372 /* PurchaseSuccessModel.swift in Sources */,
 				6FF9274F26B1E9FF0068D372 /* FeatureBManager.swift in Sources */,
